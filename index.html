@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jayesh Kale — Senior Full-Stack Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ============ AURORA BACKGROUND ============ -->
+    <div class="aurora">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="aurora-grid"></div>
+    </div>
+
+    <!-- ============ NAV ============ -->
+    <nav id="navbar">
+      <div class="nav-logo">
+        <span class="dot"></span>
+        jayesh@kale ~ portfolio
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" onclick="closeNav()">about</a></li>
+        <li><a href="#skills" onclick="closeNav()">stack</a></li>
+        <li><a href="#experience" onclick="closeNav()">log</a></li>
+        <li><a href="#projects" onclick="closeNav()">work</a></li>
+        <li><a href="#education" onclick="closeNav()">education</a></li>
+        <li><a href="#contact" onclick="closeNav()">contact</a></li>
+      </ul>
+      <a href="mailto:jayeshkale052@gmail.com" class="nav-cta">Hire me ↗</a>
+      <button
+        class="hamburger"
+        id="hamburger"
+        onclick="toggleNav()"
+        aria-label="Menu"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <section id="hero">
+      <div class="hero-inner">
+        <div>
+          <div class="hero-eyebrow">
+            <span class="dot"></span> available for new opportunities
+          </div>
+          <h1 class="hero-name">
+            Jayesh<br /><span class="accent">Kale</span>
+          </h1>
+          <div class="hero-title">
+            role: "Senior Full-Stack Software Engineer"
+          </div>
+          <p class="hero-desc">
+            I design and ship reliable, production-grade systems — from
+            real-time dashboards to safety-critical mobile apps — using React,
+            Node.js, TypeScript and AWS. 5+ years building things that stay up.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary">View work →</a>
+            <a href="#contact" class="btn-ghost">Get in touch</a>
+          </div>
+        </div>
+
+        <div class="status-panel glass">
+          <div class="status-head">
+            <span class="status-head-title">jayesh.dev / status</span>
+            <span class="status-head-badge">
+              <span class="dot"></span>all systems operational
+            </span>
+          </div>
+          <div class="status-list">
+            <div class="status-row">
+              <span class="status-row-name"
+                ><span class="dot"></span>Frontend systems</span
+              >
+              <span class="status-row-val">Operational</span>
+            </div>
+            <div class="status-row">
+              <span class="status-row-name"
+                ><span class="dot"></span>Backend services</span
+              >
+              <span class="status-row-val">Operational</span>
+            </div>
+            <div class="status-row">
+              <span class="status-row-name"
+                ><span class="dot"></span>Cloud infrastructure</span
+              >
+              <span class="status-row-val">Operational</span>
+            </div>
+            <div class="status-row">
+              <span class="status-row-name"
+                ><span class="dot"></span>Response time</span
+              >
+              <span class="status-row-val">&lt; 24h</span>
+            </div>
+          </div>
+          <div class="status-metrics">
+            <div class="status-metric">
+              <div class="status-metric-num">5+</div>
+              <div class="status-metric-label">Years exp.</div>
+            </div>
+            <div class="status-metric">
+              <div class="status-metric-num">50+</div>
+              <div class="status-metric-label">APIs shipped</div>
+            </div>
+            <div class="status-metric">
+              <div class="status-metric-num">4</div>
+              <div class="status-metric-label">Major builds</div>
+            </div>
+          </div>
+          <div class="status-foot">
+            last deploy: production · uptime since 2021
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about">
+      <div class="container">
+        <div class="section-eyebrow reveal">
+          <span class="idx">01</span> about
+        </div>
+        <h2 class="section-title reveal">Who I <em>am</em></h2>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a full-stack engineer with 5+ years of experience building
+              scalable web and mobile applications for enterprise clients —
+              spanning learning platforms, compliance systems, safety apps and
+              operational dashboards.
+            </p>
+            <p>
+              My work sits at the intersection of clean architecture and
+              pragmatic delivery: products that are fast, secure and easy to
+              maintain. I lean on functional programming and TDD to keep
+              codebases predictable as they grow.
+            </p>
+            <p>
+              I thrive in Agile teams, enjoy working closely with design and
+              product, and believe the best engineering is the kind users never
+              have to notice.
+            </p>
+            <div class="about-badges">
+              <span class="badge">React.js</span>
+              <span class="badge">Node.js</span>
+              <span class="badge">TypeScript</span>
+              <span class="badge">AWS</span>
+              <span class="badge">MongoDB</span>
+              <span class="badge">REST APIs</span>
+            </div>
+          </div>
+          <div class="spec-sheet glass reveal">
+            <div class="spec-head">spec sheet</div>
+            <div class="spec-row">
+              <span class="spec-key">email</span>
+              <span class="spec-val">
+                <a href="mailto:jayeshkale052@gmail.com"
+                  >jayeshkale052@gmail.com</a
+                >
+              </span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">phone</span>
+              <span class="spec-val">+91 98904 17560</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">degree</span>
+              <span class="spec-val">MCA — CGPA 8.53</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">current</span>
+              <span class="spec-val">Radical Minds Tech.</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">location</span>
+              <span class="spec-val">India</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">github</span>
+              <span class="spec-val">
+                <a href="https://github.com/jayeshkale" target="_blank"
+                  >github.com/jayeshkale</a
+                >
+              </span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">linkedin</span>
+              <span class="spec-val">
+                <a href="https://linkedin.com/in/jayeshkale" target="_blank"
+                  >linkedin.com/in/jayeshkale</a
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-eyebrow reveal">
+          <span class="idx">02</span> stack
+        </div>
+        <h2 class="section-title reveal">What I <em>build with</em></h2>
+        <div class="modules-grid">
+          <div class="module-card glass reveal">
+            <div class="module-head">
+              <span class="module-name">frontend</span>
+            </div>
+            <div class="module-tags">
+              <span class="module-tag">React.js</span>
+              <span class="module-tag">Redux</span>
+              <span class="module-tag">TypeScript</span>
+              <span class="module-tag">HTML5</span>
+              <span class="module-tag">CSS3</span>
+              <span class="module-tag">LESS</span>
+              <span class="module-tag">Ant Design</span>
+              <span class="module-tag">Material UI</span>
+            </div>
+          </div>
+          <div class="module-card glass reveal">
+            <div class="module-head">
+              <span class="module-name">backend</span>
+            </div>
+            <div class="module-tags">
+              <span class="module-tag">Node.js</span>
+              <span class="module-tag">Express.js</span>
+              <span class="module-tag">REST APIs</span>
+              <span class="module-tag">Microservices</span>
+              <span class="module-tag">JWT</span>
+              <span class="module-tag">OAuth</span>
+              <span class="module-tag">RBAC</span>
+            </div>
+          </div>
+          <div class="module-card glass reveal">
+            <div class="module-head">
+              <span class="module-name">database</span>
+            </div>
+            <div class="module-tags">
+              <span class="module-tag">MongoDB</span>
+              <span class="module-tag">Mongoose</span>
+              <span class="module-tag">MySQL</span>
+            </div>
+          </div>
+          <div class="module-card glass reveal">
+            <div class="module-head">
+              <span class="module-name">cloud &amp; devops</span>
+            </div>
+            <div class="module-tags">
+              <span class="module-tag">AWS EC2</span>
+              <span class="module-tag">AWS S3</span>
+              <span class="module-tag">Lambda</span>
+              <span class="module-tag">CI/CD</span>
+            </div>
+          </div>
+          <div class="module-card glass reveal">
+            <div class="module-head">
+              <span class="module-name">tooling</span>
+            </div>
+            <div class="module-tags">
+              <span class="module-tag">Git</span>
+              <span class="module-tag">GitHub</span>
+              <span class="module-tag">Postman</span>
+              <span class="module-tag">Swagger</span>
+            </div>
+          </div>
+          <div class="module-card glass reveal">
+            <div class="module-head">
+              <span class="module-name">practices</span>
+            </div>
+            <div class="module-tags">
+              <span class="module-tag">Agile/Scrum</span>
+              <span class="module-tag">TDD</span>
+              <span class="module-tag">Clean Architecture</span>
+              <span class="module-tag">React Native</span>
+              <span class="module-tag">Functional Programming</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-eyebrow reveal">
+          <span class="idx">03</span> career
+        </div>
+        <h2 class="section-title reveal">Release <em>log</em></h2>
+        <div class="release-log">
+          <div class="release-entry glass reveal">
+            <div class="release-meta">
+              <br />
+              <div class="release-date">May 2024 — Present</div>
+            </div>
+            <div>
+              <div class="release-role">Senior Software Engineer</div>
+              <div class="release-company">
+                Radical Minds Technologies Pvt. Ltd — Gurugram
+              </div>
+              <ul class="release-list">
+                <li>
+                  Converted UI/UX wireframes into reusable, production-ready
+                  code using HTML5, CSS3, React.js and TypeScript — delivering
+                  scalable LMS and QMS platforms for enterprise clients.
+                </li>
+                <li>
+                  Built responsive, cross-browser, accessibility-compliant
+                  interfaces, optimizing performance for fast load times and
+                  consistent UX across devices.
+                </li>
+                <li>
+                  Developed dynamic web applications with JavaScript (ES6+),
+                  React and Redux, enabling smooth workflows and efficient state
+                  management in complex systems.
+                </li>
+                <li>
+                  Integrated RESTful and third-party APIs for real-time data
+                  handling, supporting content delivery, analytics, compliance
+                  tracking and reporting.
+                </li>
+                <li>
+                  Used Ant Design to implement modern, consistent UI components,
+                  accelerating development speed and maintaining design
+                  uniformity.
+                </li>
+                <li>
+                  Deployed and maintained applications on AWS (EC2, S3) within
+                  Agile/Scrum environments, collaborating across
+                  cross-functional teams.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="release-entry glass reveal">
+            <div class="release-meta">
+              <br />
+              <div class="release-date">Jan 2021 — Feb 2024</div>
+            </div>
+            <div>
+              <div class="release-role">Software Development Engineer 2</div>
+              <div class="release-company">Dror Labs Pvt. Ltd</div>
+              <ul class="release-list">
+                <li>
+                  Translated UI/UX wireframes into high-quality, reusable,
+                  responsive web and mobile components using HTML5, CSS3,
+                  React.js, Redux and React Native.
+                </li>
+                <li>
+                  Designed and developed 50+ low-latency RESTful APIs,
+                  integrating third-party services and optimizing backend logic
+                  with efficient algorithms and data structures.
+                </li>
+                <li>
+                  Applied functional programming principles, clean architecture
+                  and TDD practices to improve code modularity, maintainability
+                  and reliability across the full stack.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-eyebrow reveal">
+          <span class="idx">04</span> portfolio
+        </div>
+        <h2 class="section-title reveal">What I've <em>built</em></h2>
+        <div class="proj-grid">
+          <div class="proj-card glass reveal">
+            <div class="proj-top">
+              <span class="proj-tag">Safety &amp; Emergency</span>
+              <span class="proj-status"><span class="dot"></span>Live</span>
+            </div>
+            <h3>Riskmatic SOS</h3>
+            <p>
+              A personal safety application that lets users trigger instant SOS
+              alerts with live location sharing to trusted contacts and response
+              teams. Built real-time alert broadcasting with Socket.io,
+              background geolocation tracking, and an admin console for
+              monitoring active incidents as they happen.
+            </p>
+            <div class="proj-meta">
+              jun 2025 — present · mobile + admin console
+            </div>
+            <div class="proj-techs">
+              <span class="proj-tech">React Native</span>
+              <span class="proj-tech">Node.js</span>
+              <span class="proj-tech">Socket.io</span>
+              <span class="proj-tech">MongoDB</span>
+              <span class="proj-tech">Geolocation</span>
+              <span class="proj-tech">AWS</span>
+            </div>
+          </div>
+
+          <div class="proj-card glass reveal">
+            <div class="proj-top">
+              <span class="proj-tag">Operations</span>
+              <span class="proj-status"><span class="dot"></span>Live</span>
+            </div>
+            <h3>Seat Booking Dashboard</h3>
+            <p>
+              An admin dashboard for managing seat reservations across venues
+              and events in real time — interactive seat-map UI, booking and
+              cancellation workflows, and live availability sync between staff
+              and customer-facing views, with role-based access for staff vs.
+              admins.
+            </p>
+            <div class="proj-meta">mar 2025 — may 2025 · admin dashboard</div>
+            <div class="proj-techs">
+              <span class="proj-tech">React.js</span>
+              <span class="proj-tech">Redux</span>
+              <span class="proj-tech">Node.js</span>
+              <span class="proj-tech">REST APIs</span>
+              <span class="proj-tech">RBAC</span>
+              <span class="proj-tech">MySQL</span>
+            </div>
+          </div>
+
+          <div class="proj-card glass reveal">
+            <div class="proj-top">
+              <span class="proj-tag">Enterprise Platform</span>
+              <span class="proj-status"><span class="dot"></span>Live</span>
+            </div>
+            <h3>Quality Management System</h3>
+            <p>
+              An enterprise QMS for managing compliance workflows, audits and
+              quality control processes. Includes role-based dashboards with
+              real-time compliance metrics and secure document management with
+              encryption and access controls.
+            </p>
+            <div class="proj-meta">jun 2024 — present · enterprise web app</div>
+            <div class="proj-techs">
+              <span class="proj-tech">React.js</span>
+              <span class="proj-tech">Node.js</span>
+              <span class="proj-tech">AWS</span>
+              <span class="proj-tech">RBAC</span>
+              <span class="proj-tech">REST APIs</span>
+              <span class="proj-tech">Encryption</span>
+            </div>
+          </div>
+
+          <div class="proj-card glass reveal">
+            <div class="proj-top">
+              <span class="proj-tag">EdTech Platform</span>
+              <span class="proj-status"><span class="dot"></span>Live</span>
+            </div>
+            <h3>Learning Management System</h3>
+            <p>
+              A full-featured LMS for managing courses, enrollments and progress
+              tracking, with real-time notifications and activity updates.
+              Scalable React + Redux frontend with efficient state management,
+              deployed on AWS EC2 &amp; S3 for high availability.
+            </p>
+            <div class="proj-meta">oct 2024 — dec 2024 · web app</div>
+            <div class="proj-techs">
+              <span class="proj-tech">React.js</span>
+              <span class="proj-tech">Redux</span>
+              <span class="proj-tech">AWS EC2</span>
+              <span class="proj-tech">S3</span>
+              <span class="proj-tech">Real-time</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education">
+      <div class="container">
+        <div class="section-eyebrow reveal">
+          <span class="idx">05</span> background
+        </div>
+        <h2 class="section-title reveal">
+          Education &amp; <em>certifications</em>
+        </h2>
+        <div class="edu-grid">
+          <div class="edu-card glass reveal">
+            <div class="edu-badge">Master's degree</div>
+            <h3>Master of Computer Application (MCA)</h3>
+            <div class="edu-sub">
+              Specialisation in Full Stack Web Development
+            </div>
+            <div class="edu-score">CGPA: 8.533</div>
+            <div class="edu-period">2022 — 2024</div>
+          </div>
+          <div class="edu-card glass reveal">
+            <div class="edu-badge">Bachelor's degree</div>
+            <h3>Bachelor of Science (BSC)</h3>
+            <div class="edu-sub">Specialisation in Statistics</div>
+            <div class="edu-score">Percentage: 83.69%</div>
+            <div class="edu-period">2017 — 2020</div>
+          </div>
+        </div>
+        <div class="cert-grid">
+          <div class="cert-item glass reveal">
+            <span class="cert-icon">CERT</span>
+            <div>
+              <div class="cert-name">Certified Full Stack Web Development</div>
+              <div class="cert-org">Institute of Masai School · 2020</div>
+            </div>
+          </div>
+          <div class="cert-item glass reveal">
+            <span class="cert-icon">AWRD</span>
+            <div>
+              <div class="cert-name">
+                District Level Mathematics Competition
+              </div>
+              <div class="cert-org">District Level · 2019</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-eyebrow reveal">
+          <span class="idx">06</span> get in touch
+        </div>
+        <h2 class="section-title reveal">Let's <em>work together</em></h2>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <h3>Open to new opportunities</h3>
+            <p>
+              Whether you have a role in mind, a project to discuss, or just
+              want to connect — I'd love to hear from you. I typically respond
+              within 24 hours.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:jayeshkale052@gmail.com" class="contact-link"
+                >✉ jayeshkale052@gmail.com</a
+              >
+              <a href="tel:+919890417560" class="contact-link"
+                >☏ +91 98904 17560</a
+              >
+              <a
+                href="https://github.com/jayeshkale"
+                target="_blank"
+                class="contact-link"
+                >⌥ GitHub profile</a
+              >
+              <a
+                href="https://linkedin.com/in/jayeshkale"
+                target="_blank"
+                class="contact-link"
+                >in LinkedIn profile</a
+              >
+            </div>
+          </div>
+
+          <!-- CONTACT FORM — powered by EmailJS -->
+          <div class="contact-form glass reveal">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="from_name">Your name</label>
+                <input
+                  type="text"
+                  id="from_name"
+                  placeholder="John Doe"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="from_email">Email address</label>
+                <input
+                  type="email"
+                  id="from_email"
+                  placeholder="john@company.com"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                placeholder="Job opportunity / project collaboration"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                rows="5"
+                placeholder="Tell me about the opportunity or project..."
+              ></textarea>
+            </div>
+            <button class="form-submit" id="submitBtn" onclick="sendEmail()">
+              <span id="btnText">Send message →</span>
+            </button>
+            <div class="form-msg" id="formMsg"></div>
+            <p class="emailjs-note">
+              Powered by EmailJS — messages go directly to Jayesh's inbox
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+      <p>
+        Designed &amp; built by <span class="accent">Jayesh Kale</span> · 2025
+      </p>
+      <p class="sub">Full-Stack Engineer · React · Node.js · AWS</p>
+    </footer>
+
+    <!-- ============ EMAILJS SDK ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
